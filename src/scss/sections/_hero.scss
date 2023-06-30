@@ -1,0 +1,25 @@
+.hero {
+	gap: 1rem;
+	display: flex;
+	margin-top: 4rem;
+	min-height: 60vh;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	&-title {
+		font-size: var(--tsm2);
+		color: var(--theme-color);
+		font-family: var(--fira-code);
+	}
+	&-title-large {
+		font-size: var(--tgiant);
+		color: var(--light-slate);
+		font-family: var(--raleway);
+	}
+	&-title-sub {
+		color: var(--lightest-slate);
+	}
+	&-text {
+		color: var(--slate)
+	}
+}
