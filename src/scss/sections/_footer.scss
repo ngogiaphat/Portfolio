@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  padding: 15px;
+  min-height: 70px;
+  align-content: center;
+  justify-content: center;
+  .footer-link {
+		gap: 0.5rem;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    font-size: var(--tsm1);
+    flex-direction: column;
+    color: var(--theme-color);
+    transition: 0.3s ease-in-out;
+    outline: 2px dashed transparent;
+    &:focus {
+      outline-color: var(--theme-color);
+    }
+    .footer-info {
+      text-align: center;
+      font-family: var(--fira-code);
+    }
+    .footer-git {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 1rem;
+      &-item {
+        gap: 0.3rem;
+        display: flex;
+        &-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
