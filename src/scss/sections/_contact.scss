@@ -1,0 +1,41 @@
+.contact {
+	gap: 1rem;
+  display: flex;
+  max-width: 700px;
+  margin: 15rem auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .contact-title {
+		font-weight: 300;
+		font-size: var(--tbase);
+    color: var(--theme-color);
+    font-family: var(--fira-code);
+    &::before {
+			margin-right: 0.5rem;
+      counter-increment: title;
+      color: var(--theme-color);
+      content: "0" counter(title) ".";
+    }
+  }
+  .contact-sub-title {
+    font-size: var(--tgiant);
+    color: var(--light-slate);
+    font-family: var(--raleway);
+  }
+  .contact-text {
+		font-weight: 500;
+    text-align: center;
+    line-height: 1.6rem;
+    color: var(--slate);
+    letter-spacing: 0.07rem;
+    font-size: var(--tlarge);
+    font-family: var(--raleway);
+  }
+  .contact-cta {
+    margin-top: 1rem;
+    .btn {
+      padding: 1rem 2rem;
+    }
+  }
+}
