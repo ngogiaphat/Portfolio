@@ -1,0 +1,13 @@
+.loader {
+	fill: none;
+	height: 90vh;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	color: var(--theme-color);
+	svg {
+		width: 10rem;
+		height: 10rem;
+	}
+}
