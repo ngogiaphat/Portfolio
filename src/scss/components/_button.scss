@@ -1,0 +1,15 @@
+.btn {
+	outline: none;
+	border-radius: 4px;
+	padding: 0.75em 1em;
+	text-decoration: none;
+	font-size: var(--tsm);
+	color: var(--theme-color);
+	background-color: transparent;
+	border: 1px solid var(--theme-color);
+	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+	&:hover,
+	&:focus {
+		background-color: var(--lightest-navy);
+	}
+}
