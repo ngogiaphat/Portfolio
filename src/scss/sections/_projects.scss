@@ -1,0 +1,34 @@
+.projects {
+	margin: 15rem 0;
+	.title {
+		position: relative;
+		font-family: var(--raleway);
+		color: var(--lightest-slate);
+		h2 {
+			font-weight: 700;
+			margin-bottom: 2rem;
+			font-size: var(--tx2large);
+			&::before {
+				margin-right: 0.5rem;
+				counter-increment: title;
+				color: var(--theme-color);
+				content: "0" counter(title) ".";
+			}
+			&::after {
+				top: 20px;
+				content: "";
+				height: 2px;
+				width: 300px;
+				display: block;
+				margin-left: 420px;
+				position: absolute;
+				background-color: var(--lightest-navy);
+			}
+		}
+	}
+	&-container {
+		gap: 5rem;
+		display: flex;
+		flex-direction: column;
+	}
+}
